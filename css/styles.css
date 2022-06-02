@@ -8,13 +8,14 @@
   --btn-hiro-hover: #188ce8;
   --addr-footer-white: rgba(255, 255, 255, 0.6);
   --bgr-team: #f5f4fa;
-  --bgr-btn-pfl: #f5f4fa;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--text-hover-wight);
+  font-size: 14px;
 }
 
 p,
@@ -45,20 +46,10 @@ ol {
 
 /*~~~~~~~~~~~~~~~~~~~FIRST PAGE~~~~~~~~~~~~~~~~~~~~*/
 
-body {
-  font-family: "Roboto", "Raleway", sens-serif;
-  color: var(--main-text-color);
-  letter-spacing: 0.03em;
-  background-color: var(--text-hover-wight);
-  font-size: 14px;
-}
-
 /* -------------for ul without points------------ */
 
 .list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .container {
@@ -70,19 +61,15 @@ body {
 
 /*____________________HEADER_________________________*/
 
+.header-frame {
+  border-bottom: 1px solid #ececec;
+}
+
 .display-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.header-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -92,33 +79,38 @@ body {
   line-height: 1.19;
 }
 
+.logo-margin {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo-blue {
   color: var(--logo-bgr-blue);
 }
 
-.margin-nav {
-  margin-left: 93px;
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 /*--------------for <li> in HEADER------------*/
 
-.marg-li-header:not(:last-child) {
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.marg-li-header {
   margin-right: 50px;
 }
 
-.marg-li-header:nth-child(2n) {
-  margin-right: 51px;
-}
-
 .head-li-addr:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 /* -------------for <a> in HEADER-------------*/
-.wight-link {
-  display: flex;
-  align-items: center;
-}
+
 .link-header {
   color: var(--main-text-color);
   text-decoration: none;
@@ -126,6 +118,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--text-hover-wight);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-header:hover,
@@ -139,15 +134,17 @@ body {
 
 /*-------------for address <a> in HEADER----------------*/
 
-.addr-head {
+.link-addr-head {
   color: var(--content-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.addr-head:hover,
-.addr-head:focus {
+.link-addr-head:hover,
+.link-addr-head:focus {
   color: var(--logo-bgr-blue);
 }
 
@@ -155,13 +152,13 @@ body {
 
 .hiro-bgr {
   background-color: var(--bgr-hero-color);
+}
+
+.padding-hiro {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/*.temporary {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}*/
+
 .hiro-text {
   color: var(--text-hover-wight);
   font-weight: 900;
@@ -187,6 +184,9 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .hiro-btn:hover,
@@ -196,6 +196,16 @@ body {
 
 /*___________________Sectio Features___________________*/
 
+.fiatures {
+  /*width: 1200px;
+  margin-left: auto;
+  margin-right: auto;*/
+  padding-top: 94px;
+}
+
+.section {
+  padding-bottom: 94px;
+}
 .visualy-hidden {
   position: absolute;
   white-space: nowrap;
@@ -209,10 +219,23 @@ body {
   margin: -1px;
 }
 
+.display-ul {
+  display: flex;
+}
+
+.item-fiatures {
+  width: 270px;
+}
+
+.item-fiatures:not(:last-child) {
+  margin-right: 30px;
+}
+
 .third-headline {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -226,29 +249,70 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.item-what-do:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*_________________Section Team________________________*/
 
+.item-team:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-team {
+  border-radius: 0 0 4px 4px;
+  background-color: var(--text-hover-wight);
+}
+
 .team-bgr {
   background-color: var(--bgr-team);
+  padding-top: 94px;
 }
+
 .names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .profession {
   color: var(--content-text-color);
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+}
+
+.team-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mrg-for-h-two {
+  margin-bottom: 50px;
 }
 
 /*_________________FOOTER_________________________________*/
 
+.padding-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
   font-style: normal;
+}
+
+.collomn {
+  flex-direction: column;
+}
+
+.item-footer:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .logo-footer {
@@ -258,6 +322,11 @@ body {
   color: var(--text-hover-wight);
   text-decoration: none;
   line-height: 1.19;
+}
+
+.margin-logo-foot {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .link-footer {
@@ -288,16 +357,32 @@ body {
 
 /*_________________section filters______________*/
 
+.section-top {
+  padding-top: 94px;
+}
+
+.item-filters:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-portfolio {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
 .btn-font {
-  font-style: normal;
   font-family: inherit;
   font-weight: 500;
   color: var(--main-text-color);
-  background-color: var(--bgr-btn-pfl);
+  background-color: var(--bgr-team);
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .btn-font:hover,
@@ -306,10 +391,18 @@ body {
   background-color: var(--logo-bgr-blue);
 }
 
+.card-net {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
 .title-font {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .desc-font {
@@ -322,4 +415,16 @@ body {
   text-decoration: none;
   font-style: inherit;
   color: inherit;
+}
+
+.work-exemples {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.frame {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
