@@ -17,42 +17,43 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header-frame">
       <div class="container display-head">
-        <div class="wight-link">
-          <a class="logo" href="./"><span class="logo-blue">Web</span>Studio</a>
+        <nav class="navigation">
+          <a class="logo logo-margin" href="./"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
 
-          <nav class="margin-nav">
-            <ul class="list">
-              <div class="header-link">
-                <li class="marg-li-header">
-                  <a class="link-header current" href="./index.html">Студия</a>
-                </li>
-                <li class="marg-li-header">
-                  <a class="link-header" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="marg-li-header">
-                  <a class="link-header" href="">Контакты</a>
-                </li>
-              </div>
-            </ul>
-          </nav>
-        </div>
-        <ul class="list">
+          <ul class="list header-list">
+            <li class="marg-li-header">
+              <a class="link-header current" href="./index.html">Студия</a>
+            </li>
+            <li class="marg-li-header">
+              <a class="link-header" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="marg-li-header">
+              <a class="link-header" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="list header-list">
           <li class="head-li-addr">
-            <a class="addr-head" href="mailto:info@devstudio.com"
+            <a class="link-addr-head" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="head-li-addr">
-            <a class="addr-head" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link-addr-head" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hiro-bgr">
-        <div class="container temporary">
+      <section class="hiro-bgr padding-hiro">
+        <div class="container">
           <h1 class="hiro-text">
             Эффективные решения <br />
             для вашего бизнеса
@@ -60,32 +61,32 @@
           <button class="hiro-btn" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="wight-bgr">
+      <section class="fiatures section">
         <div class="container">
           <h2 class="visualy-hidden">особенности</h2>
-          <ul class="list">
-            <li>
+          <ul class="list display-ul">
+            <li class="item-fiatures">
               <h3 class="third-headline">Внимание к деталям</h3>
               <p class="features-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item-fiatures">
               <h3 class="third-headline">Пунктуальность</h3>
               <p class="features-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item-fiatures">
               <h3 class="third-headline">Планирование</h3>
               <p class="features-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item-fiatures">
               <h3 class="third-headline">Современные технологии</h3>
               <p class="features-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -95,58 +96,66 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="second-headline">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="list display-ul">
+            <li class="item-what-do">
               <img src="./images/img1.jpg" alt="backend" width="370" />
             </li>
-            <li>
+            <li class="item-what-do">
               <img src="./images/img2.jpg" alt="frontend" width="370" />
             </li>
-            <li>
+            <li class="item-what-do">
               <img src="./images/img3.jpg" alt="desine" width="370" />
             </li>
           </ul>
         </div>
       </section>
-      <section class="team-bgr">
+      <section class="section team-bgr">
         <div class="container">
-          <h2 class="second-headline">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <h2 class="second-headline mrg-for-h-two">Наша команда</h2>
+          <ul class="list display-ul">
+            <li class="item-team">
               <img src="./images/photo1.jpg" alt="photo1" width="270" />
-              <h3 class="names">Игорь Демьяненко</h3>
-              <p class="profession">Product Designer</p>
+              <div class="team-padding">
+                <h3 class="names">Игорь Демьяненко</h3>
+                <p class="profession">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="item-team">
               <img src="./images/photo2.jpg" alt="photo2" width="270" />
-              <h3 class="names">Ольга Репина</h3>
-              <p class="profession">Frontend Developer</p>
+              <div class="team-padding">
+                <h3 class="names">Ольга Репина</h3>
+                <p class="profession">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="item-team">
               <img src="./images/photo3.jpg" alt="photo3" width="270" />
-              <h3 class="names">Николай Тарасов</h3>
-              <p class="profession">Marketing</p>
+              <div class="team-padding">
+                <h3 class="names">Николай Тарасов</h3>
+                <p class="profession">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="item-team">
               <img src="./images/photo4.jpg" alt="photo4" width="270" />
-              <h3 class="names">Михаил Ермаков</h3>
-              <p class="profession">UI Designer</p>
+              <div class="team-padding">
+                <h3 class="names">Михаил Ермаков</h3>
+                <p class="profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="hiro-bgr">
+    <footer class="hiro-bgr padding-footer">
       <div class="container">
-        <a class="logo-footer" href="./index.html"
+        <a class="logo-footer margin-logo-foot" href="./index.html"
           ><span class="logo-blue">Web</span>Studio</a
         >
         <address class="address">
-          <ul class="list">
-            <li>
+          <ul class="list collomn">
+            <li class="item-footer">
               <a
                 class="link-footer"
                 href="https://goo.gl/maps/Hpi7qBNF4pR7eWcx5"
@@ -155,12 +164,12 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="item-footer">
               <a class="addr-footer" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li>
+            <li class="item-footer">
               <a class="addr-footer" href="tel:+380991111111"
                 >+38 099 111 11 11</a
               >

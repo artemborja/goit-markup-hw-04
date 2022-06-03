@@ -8,13 +8,14 @@
   --btn-hiro-hover: #188ce8;
   --addr-footer-white: rgba(255, 255, 255, 0.6);
   --bgr-team: #f5f4fa;
-  --bgr-btn-pfl: #f5f4fa;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--text-hover-wight);
+  font-size: 14px;
 }
 
 p,
@@ -45,22 +46,10 @@ ol {
 
 /*~~~~~~~~~~~~~~~~~~~FIRST PAGE~~~~~~~~~~~~~~~~~~~~*/
 
-body {
-  font-family: "Roboto", "Raleway", sens-serif;
-  color: var(--main-text-color);
-  letter-spacing: 0.03em;
-  background-color: var(--text-hover-wight);
-  font-size: 14px;
-}
-
 /* -------------for ul without points------------ */
 
 .list {
   list-style: none;
-}
-
-.header-list {
-  display: flex;
 }
 
 .container {
@@ -94,15 +83,10 @@ body {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  width: 145px;
 }
 
 .logo-blue {
   color: var(--logo-bgr-blue);
-}
-
-.marg-list-nav {
-  margin-right: 331px;
 }
 
 .navigation {
@@ -111,6 +95,11 @@ body {
 }
 
 /*--------------for <li> in HEADER------------*/
+
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .marg-li-header {
   margin-right: 50px;
@@ -208,15 +197,16 @@ body {
 /*___________________Sectio Features___________________*/
 
 .fiatures {
-  width: 1200px;
+  /*width: 1200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   padding-top: 94px;
 }
 
 .section {
   padding-bottom: 94px;
 }
+
 .visualy-hidden {
   position: absolute;
   white-space: nowrap;
@@ -246,7 +236,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -275,6 +265,7 @@ body {
 
 .item-team {
   border-radius: 0 0 4px 4px;
+  background-color: var(--text-hover-wight);
 }
 
 .team-bgr {
@@ -321,6 +312,10 @@ body {
   flex-direction: column;
 }
 
+.item-footer:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .logo-footer {
   font-family: Raleway;
   font-weight: 700;
@@ -340,6 +335,7 @@ body {
   color: var(--text-hover-wight);
   line-height: 2;
 }
+
 .addr-footer {
   text-decoration: none;
   color: var(--addr-footer-white);
@@ -373,12 +369,11 @@ body {
 
 .btn-portfolio {
   display: flex;
-  padding-bottom: 50px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .btn-font {
-  font-style: normal;
   font-family: inherit;
   font-weight: 500;
   color: var(--main-text-color);
@@ -409,6 +404,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .desc-font {
@@ -432,4 +428,5 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
