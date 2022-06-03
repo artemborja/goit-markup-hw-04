@@ -278,7 +278,7 @@ ol {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -327,7 +327,7 @@ ol {
 
 .margin-logo-foot {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .link-footer {
@@ -377,7 +377,7 @@ ol {
   font-family: inherit;
   font-weight: 500;
   color: var(--main-text-color);
-  background-color: var(--bgr-btn-pfl);
+  background-color: var(--bgr-team);
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
