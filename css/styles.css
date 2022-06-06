@@ -254,7 +254,7 @@ ol {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(./images/antenna.svg);
+  background-image: url(/images/antenna.svg);
   background-color: var(--bgr-team);
   background-repeat: no-repeat;
   background-position: center;
@@ -267,7 +267,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(./images/clock.svg);
+  background-image: url(/images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -279,7 +279,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(./images/diagram.svg);
+  background-image: url(/images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -291,7 +291,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(./images/astronaut.svg);
+  background-image: url(/images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
