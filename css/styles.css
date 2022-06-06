@@ -8,6 +8,7 @@
   --btn-hiro-hover: #188ce8;
   --addr-footer-white: rgba(255, 255, 255, 0.6);
   --bgr-team: #f5f4fa;
+  --social-color: #afb1b8;
 }
 
 body {
@@ -109,7 +110,7 @@ ol {
   margin-right: 50px;
 }
 
-/* -------------for <a> in HEADER-------------*/
+/* -------------for <a> in HEADER--------------*/
 
 .link-header {
   color: var(--main-text-color);
@@ -135,6 +136,8 @@ ol {
 /*-------------for address <a> in HEADER----------------*/
 
 .link-addr-head {
+  display: inline-flex;
+  align-items: center;
   color: var(--content-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -148,13 +151,30 @@ ol {
   color: var(--logo-bgr-blue);
 }
 
+.envelope {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smartphone {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* ____________________HIRO________________________*/
 
 .hiro-bgr {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hiroimg.jpg);
   background-color: var(--bgr-hero-color);
-}
-
-.padding-hiro {
+  background-position: center;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -228,6 +248,54 @@ ol {
   width: 270px;
 }
 
+.antena::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-image: url(/images/antenna.svg);
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clock::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-image: url(/images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.diagram::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-image: url(/images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.astronaut::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-image: url(/images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .item-fiatures:not(:last-child) {
   margin-right: 30px;
 }
@@ -266,6 +334,8 @@ ol {
 .item-team {
   border-radius: 0 0 4px 4px;
   background-color: var(--text-hover-wight);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-bgr {
@@ -286,6 +356,49 @@ ol {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
+}
+
+.icons-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-list {
+  display: inline-flex;
+  fill: var(--social-color);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 50%;
+}
+
+.instagram-list {
+  margin-left: 32px;
+  margin-right: 10px;
+}
+.icons {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-list:hover,
+.icon-list:focus {
+  background-color: var(--logo-bgr-blue);
+  fill: var(--text-hover-wight);
+}
+
+.twiter-list {
+  margin-right: 10px;
+}
+
+.facebook-link {
+  margin-right: 10px;
 }
 
 .team-padding {
@@ -297,11 +410,65 @@ ol {
   margin-bottom: 50px;
 }
 
+/*_________________________Section CLIENTS___________________________*/
+
+.last-section {
+  padding-top: 94px;
+}
+
+.clients-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-logo {
+  display: flex;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-color);
+  fill: var(--social-color);
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  border-color: var(--logo-bgr-blue);
+  color: var(--logo-bgr-blue);
+  fill: var(--logo-bgr-blue);
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 94px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.client-svg {
+  color: currentColor;
+  display: flex;
+
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /*_________________FOOTER_________________________________*/
 
-.padding-footer {
+.footer-bgr {
+  background-color: var(--bgr-hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.foot-display {
+  display: flex;
+  align-items: baseline;
 }
 
 .address {
@@ -355,6 +522,56 @@ ol {
   color: var(--logo-bgr-blue);
 }
 
+.foot-addr-link {
+  color: var(--text-hover-wight);
+  margin-left: 70px;
+}
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.foot-social-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.foot-soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-soc-link:hover,
+.foot-soc-link:focus {
+  background-color: var(--logo-bgr-blue);
+}
+
+.foot-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-hover-wight);
+}
+
 /*~~~~~~~~~~~~~~~~~~~PORTFOLIO~~~~~~~~~~~~~~~~~~~*/
 
 /*_________________section filters______________*/
@@ -400,17 +617,33 @@ ol {
   margin-left: -30px;
 }
 
+.work-border {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.work-exemples:hover,
+.work-exemples:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .title-font {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 34px;
   margin-bottom: 4px;
+  padding-top: 20px;
 }
 
 .desc-font {
   color: var(--content-text-color);
   font-size: 16px;
   line-height: 1.875;
+  margin-bottom: 20px;
+  margin-left: 34px;
 }
 
 .link-non-stiles {
