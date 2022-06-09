@@ -173,7 +173,7 @@ ol {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/Img-hiro.jpg);
+    url(./images/Img-hiro.jpg);
   background-color: var(--bgr-hero-color);
   background-position: center;
   max-width: 1600px;
