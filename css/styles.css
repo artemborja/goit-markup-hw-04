@@ -173,12 +173,13 @@ ol {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/Img-hiro.jpg);
+    url(../images/Img-hiro.jpg);
   background-color: var(--bgr-hero-color);
   background-position: center;
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hiro-text {
@@ -256,7 +257,7 @@ ol {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(/images/antenna.svg);
+  background-image: url(../images/antenna.svg);
   background-color: var(--bgr-team);
   background-repeat: no-repeat;
   background-position: center;
@@ -269,7 +270,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(/images/clock.svg);
+  background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -281,7 +282,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(/images/diagram.svg);
+  background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -293,7 +294,7 @@ ol {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--bgr-team);
-  background-image: url(/images/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
