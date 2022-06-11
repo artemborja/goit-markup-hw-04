@@ -40,7 +40,8 @@ img {
 }
 
 ul,
-ol {
+ol,
+li {
   margin: 0;
   padding-left: 0;
 }
@@ -180,6 +181,7 @@ ol {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
+  padding: 0 auto;
 }
 
 .hiro-text {
@@ -370,6 +372,18 @@ ol {
 
 .icon-list {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-linc-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--social-color);
   width: 44px;
   height: 44px;
@@ -377,31 +391,17 @@ ol {
   align-items: center;
   border-radius: 50% 50%;
 }
-
-.instagram-list {
-  margin-left: 32px;
-  margin-right: 10px;
-}
-.icons {
-  width: 20px;
-  height: 20px;
-  color: currentColor;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-list:hover,
-.icon-list:focus {
+.list-linc-icons:hover {
   background-color: var(--logo-bgr-blue);
   fill: var(--text-hover-wight);
 }
 
-.twiter-list {
-  margin-right: 10px;
-}
-
-.facebook-link {
-  margin-right: 10px;
+.icons {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .team-padding {
@@ -421,22 +421,16 @@ ol {
 
 .clients-ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.clients-logo {
-  display: flex;
-  border: 1px solid var(--social-color);
-  border-radius: 4px;
   justify-content: center;
   align-items: center;
-  color: var(--social-color);
-  fill: var(--social-color);
 }
 
-.clients-logo:hover,
-.clients-logo:focus {
+.clients-logo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--logo-bgr-blue);
   color: var(--logo-bgr-blue);
   fill: var(--logo-bgr-blue);
@@ -450,18 +444,19 @@ ol {
   align-items: center;
   text-decoration: none;
   color: inherit;
+  color: var(--social-color);
+  fill: var(--social-color);
+  border-radius: 4px;
+  border: 1px solid var(--social-color);
 }
 
 .client-svg {
-  color: currentColor;
-  display: flex;
-
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
 
-/*_________________FOOTER_________________________________*/
+/*________________________________FOOTER_________________________________*/
 
 .footer-bgr {
   background-color: var(--bgr-hero-color);
@@ -509,7 +504,7 @@ ol {
 .addr-footer {
   text-decoration: none;
   color: var(--addr-footer-white);
-  line-height: 2;
+  line-height: 1.71;
 }
 
 .addr-footer:hover,
@@ -624,35 +619,33 @@ ol {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-
-.work-exemples:hover,
-.work-exemples:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  padding: 20px 24px;
 }
 
 .title-font {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-left: 34px;
   margin-bottom: 4px;
-  padding-top: 20px;
 }
 
 .desc-font {
   color: var(--content-text-color);
   font-size: 16px;
   line-height: 1.875;
-  margin-bottom: 20px;
-  margin-left: 34px;
 }
 
 .link-non-stiles {
+  display: block;
   text-decoration: none;
   font-style: inherit;
   color: inherit;
+}
+
+.link-non-stiles:hover,
+.link-non-stiles:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-exemples {
