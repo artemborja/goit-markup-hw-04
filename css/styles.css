@@ -70,6 +70,7 @@ li {
 .display-head {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -177,9 +178,11 @@ li {
     url(../images/Img-hiro.jpg);
   background-color: var(--bgr-hero-color);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   padding-top: 200px;
-  padding-bottom: 200px;
+
   margin: 0 auto;
   padding: 0 auto;
 }
@@ -231,7 +234,9 @@ li {
 .section {
   padding-bottom: 94px;
 }
-
+.section-features {
+  padding-bottom: 200px;
+}
 .visualy-hidden {
   position: absolute;
   white-space: nowrap;
@@ -245,7 +250,7 @@ li {
   margin: -1px;
 }
 
-.display-ul {
+.list-fiatures {
   display: flex;
 }
 
@@ -343,7 +348,7 @@ li {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-bgr {
+.team {
   background-color: var(--bgr-team);
   padding-top: 94px;
 }
@@ -384,24 +389,23 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--social-color);
+  color: var(--social-color);
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
   border-radius: 50% 50%;
 }
-.list-linc-icons:hover {
+.list-linc-icons:hover,
+.list-linc-icons:focus {
   background-color: var(--logo-bgr-blue);
-  fill: var(--text-hover-wight);
+  color: var(--text-hover-wight);
 }
 
 .icons {
   width: 20px;
   height: 20px;
-  fill: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: currentColor;
 }
 
 .team-padding {
@@ -415,11 +419,11 @@ li {
 
 /*_________________________Section CLIENTS___________________________*/
 
-.last-section {
+.clients {
   padding-top: 94px;
 }
 
-.clients-ul {
+.clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,12 +449,11 @@ li {
   text-decoration: none;
   color: inherit;
   color: var(--social-color);
-  fill: var(--social-color);
   border-radius: 4px;
   border: 1px solid var(--social-color);
 }
 
-.client-svg {
+.client-picture {
   width: 106px;
   height: 60px;
   fill: currentColor;
@@ -533,7 +536,7 @@ li {
   margin-bottom: 20px;
 }
 
-.foot-social-ul {
+.foot-social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,7 +567,7 @@ li {
   background-color: var(--logo-bgr-blue);
 }
 
-.foot-svg {
+.foot-picture {
   width: 20px;
   height: 20px;
   fill: var(--text-hover-wight);
@@ -606,6 +609,8 @@ li {
 .btn-font:focus {
   color: var(--text-hover-wight);
   background-color: var(--logo-bgr-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-net {
